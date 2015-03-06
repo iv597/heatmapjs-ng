@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html ng-app="heatDemo">
+<head>
+    <script type="text/javascript" src="bower_components/angularjs/angular.js"></script>
+    <script type="text/javascript" src="bower_components/heatmap.js.bower/build/heatmap.js"></script>
+    <script type="text/javascript" src="heatmapjs-ng.js"></script>
+
+    <script type="text/javascript">
+        window.heatdemo = angular.module('heatDemo', ['hmjs-ng']);
+
+        window.heatdemo.controller('mainCtrl', ['$scope', function($scope) {
+            $scope.dataPoints = [[1,1], [2,2], [50, 50]];
+        }]);
+    </script>
+</head>
+
+<body ng-controller="mainCtrl">
+    <div id="container" style="height: 250px;">
+        <heatmap points="dataPoints" max="0"></heatmap>
+    </div>
+</body>
+</html>
