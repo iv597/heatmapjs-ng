@@ -1,7 +1,7 @@
 {
   "name": "heatmapjs-ng",
   "main": "heatmapjs-ng.js",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "homepage": "https://github.com/iv597/heatmapjs-ng",
   "authors": [
     "Josh Klar <j@iv597.com>"
